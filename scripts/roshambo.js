@@ -55,7 +55,7 @@ function setupGame() {
 }
 
 function userThrow() {
-  var userInput = prompt('What do you throw... [r] Rock, [p] Paper, or [s] Scissors? \n \
+  let userInput = prompt('What do you throw... [r] Rock, [p] Paper, or [s] Scissors? \n \
   (You can also type [e] Exit.)');
   userInput = userInput.charAt(0);
   userInput = userInput.toUpperCase();
@@ -80,7 +80,7 @@ function userThrow() {
 };
 
 function computerThrow() {
-  var a = Math.random();
+  let a = Math.random();
   if (a < 0.34) {
     computerChoice = 'rock';
   }
@@ -221,7 +221,7 @@ function bout(numba) {
   };
 
   function playAgain() {
-    var again = prompt('Would you like to play again? [y] Yes or [n] No.');
+    let again = prompt('Would you like to play again? [y] Yes or [n] No.');
     again = again.charAt(0);
     again = again.toUpperCase();
     switch (again) {
